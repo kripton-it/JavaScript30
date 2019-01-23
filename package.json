@@ -1,0 +1,15 @@
+{
+  "name": "kripton-javascript30",
+  "version": "1.0.0",
+  "description": "JavaScript30 from https://javascript30.com/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikhail Shardin",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
