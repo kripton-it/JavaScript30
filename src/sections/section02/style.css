@@ -1,0 +1,141 @@
+html {
+  background: #018DED url("img/bg.jpg");
+  background-size: cover;
+  font-family: 'helvetica neue';
+  text-align: center;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+/* циферблат */
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 0 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* контейнер для стрелок */
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+  /* account for the height of the clock hands */
+}
+
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: transform 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.min-hand {
+  width: 45%;
+  background: green;
+}
+
+.hour-hand {
+  width: 40%;
+  background: red;
+}
+
+.numbers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.number {
+  font-size: 2.5rem;
+  position: absolute;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+.number1 {
+  top: -1%;
+  right: 16.5%;
+}
+
+.number2 {
+  top: 21%;
+  right: -5.9%;
+}
+
+.number3 {
+  top: 50%;
+  right: -13.5%;
+}
+
+.number4 {
+  bottom: 10%;
+  right: -5.3%;
+}
+
+.number5 {
+  bottom: -11.5%;
+  right: 16%;
+}
+
+.number6 {
+  left: 50%;
+  bottom: -19.5%;
+}
+
+.number7 {
+  bottom: -12.4%;
+  left: 20.5%;
+}
+
+.number8 {
+  bottom: 10.3%;
+  left: -1.4%;
+}
+
+.number9 {
+  top: 50%;
+  left: -9%;
+}
+
+.number10 {
+  top: 21.5%;
+  left: -1.5%;
+}
+
+.number11 {
+  top: -1%;
+  left: 20.5%;
+}
+
+.number12 {
+  left: 50%;
+  top: -8.5%;
+}
+
+
